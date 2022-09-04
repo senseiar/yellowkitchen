@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>YellowKitchen</title>
+</head>
+
+<body>
+    <div id="body_overlay" class="overlay"></div>
+    <!-- header start -->
+    <header class="header">
+
+        <div class="container">
+            <div class="header__inner">
+                <a href="/">
+                    <img src="./img/Logo.jpg" alt="YellowKitchen" class="header__logo">
+                </a>
+        
+                <ul class="header__items">
+                    <li class="header__item">
+                        <a href="#!" class="header__link">
+                            <svg width="24" height="24">
+                                <path
+                                    d="M12 6C13.1 6 14 6.9 14 8C14 9.1 13.1 10 12 10C10.9 10 10 9.1 10 8C10 6.9 10.9 6 12 6ZM12 16C14.7 16 17.8 17.29 18 18H12H6C6.23 17.28 9.31 16 12 16ZM12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z"
+                                    fill="#9093A6" />
+                            </svg>
+                            <span>Log in</span>
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#!" class="header__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.55 13C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C21.25 4.82 20.77 4 20.01 4H5.21L4.27 2H1V4H3L6.6 11.59L5.25 14.03C4.52 15.37 5.48 17 7 17H19V15H7L8.1 13H15.55ZM6.16 6H18.31L15.55 11H8.53L6.16 6ZM7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z"
+                                    fill="#9093A6" />
+                            </svg>
+                            <span>0</span>
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#!" class="header__burger burger">
+                            <span class="burger__line"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <nav class="menu">
+        <ul class="menu__list">
+            <li class="menu__item">
+                <div class="menu__phone-items">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.54 5C6.6 5.89 6.75 6.76 6.99 7.59L5.79 8.79C5.38 7.59 5.12 6.32 5.03 5H6.54ZM16.4 17.02C17.25 17.26 18.12 17.41 19 17.47V18.96C17.68 18.87 16.41 18.61 15.2 18.21L16.4 17.02ZM7.5 3H4C3.45 3 3 3.45 3 4C3 13.39 10.61 21 20 21C20.55 21 21 20.55 21 20V16.51C21 15.96 20.55 15.51 20 15.51C18.76 15.51 17.55 15.31 16.43 14.94C16.33 14.9 16.22 14.89 16.12 14.89C15.86 14.89 15.61 14.99 15.41 15.18L13.21 17.38C10.38 15.93 8.06 13.62 6.62 10.79L8.82 8.59C9.1 8.31 9.18 7.92 9.07 7.57C8.7 6.45 8.5 5.25 8.5 4C8.5 3.45 8.05 3 7.5 3Z"
+                            fill="#D4D7E6" />
+                    </svg>
+                    <a href="tel:0800 111 126" class="menu__phone">
+                        0800 111 126
+                    </a>
+                </div>
+                <span class="menu__work-time">
+                    8:00 - 22:00
+                </span>
+            </li>
+            <li class="menu__item">
+                <a href="#!" class="menu__link">Delivery info</a>
+            </li>
+            <li class="menu__item">
+                <a href="#!" class="menu__link">About us</a>
+            </li>
+            <li class="menu__item">
+                <a href="#!" class="menu__link">Restaurants</a>
+            </li>
+            <li class="menu__item">
+                <a href="#!" class="menu__link">Specialities</a>
+            </li>
+        </ul>
+
+        <div class="lang">
+            <div class="lang__selector">
+                <a href="#!" class="lang__trigger">
+                    <span>English</span><i class="arrow" id="arrow"></i>
+                </a>
+                <ul class="lang__options" id="langList">
+                    <li class="lang__option selected" data-value="english"><a href="#!">English</a></li>
+                    <li class="lang__option" data-value="French"><a href="#!">French</a></li>
+                    <li class="lang__option" data-value="german"><a href="#!">German</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header end -->
+
+    <main>
+        <!-- home section start-->
+        <section class="home">
+            <div class="container">
+                <div class="home__inner">
+                    <div class="home__column">
+                        <h1 class="home__title">Your Food court at home</h1>
+                        <div class="home__btns">
+                            <a href="#!" class="home__btn">
+                                Delivery
+                                <span class="sub-text">Order in</span>
+                            </a>
+                            <a href="#!" class="home__btn">
+                                Takeout
+                                <span class="sub-text">Grab and go</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                        <img src="./img/salad-main.png" alt="Salad" class="home__image">
+                    
+                   
+                </div>
+            </div>
+            <div class="home__benefits benefits">
+                <div class="benefits__container">
+                    <div class="benefits__inner">
+                        <div class="benefit benefit-1">
+                            <p class="benefit__ico"><img src="./img/ico/time-eat.svg" alt="" class="benefit__ico-img"></p>
+                            <p class="benefit__text benefit-1__text_width">
+                                Delivery in all paris in less than 30 minutes
+                            </p>
+                        </div>
+                        <div class="benefit benefit-2">
+                            <p class="benefit__ico"><img src="./img/ico/delivery.svg" alt="" class="benefit__ico-img"></p>
+                            <p class="benefit__text benefit-2__text_width">
+                                Free delivery from 29 euros
+                            </p>
+                        </div>
+                        <div class="benefit benefit-3">
+                            <p class="benefit__ico"><img src="./img/ico/paris.svg" alt="" class="benefit__ico-img"></p>
+                            <p class="benefit__text benefit-3__text_width">
+                                Only fresh and French products
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+        <!-- home section end -->
+
+        <!-- restaurants section start-->
+        <section class="restaurants">
+            <div class="container">
+                <div class="restaurants__inner">
+                    <div class="restaurants__header">
+                        <h2 class="restaurants__title">Restaurants</h2>
+                        <a href="#" class="grey-btn">
+                            show all
+                        </a>
+                    </div>
+                    <div class="restaurants__slider">
+                        <div class="restaurants__cards" data-glide-el="track">
+                            <div class="restaurants__card">
+                                <img src="./img/rest-slider-0.jpg" alt="burger" class="restaurants__card-pic">
+                                <div class="restaurants__logo">
+                                    <img src="./img/dlice.jpg" alt="Burger Dlice" class="restaurants__logo-img">
+                                </div>
+                            </div>
+                            <div class="restaurants__card">
+                                <img src="./img/rest-slider-1.jpg" alt="Rice" class="restaurants__card-pic">
+                                <div class="restaurants__logo">
+                                    <img src="./img/il_paster.jpg" alt="Il Pastifigo" class="restaurants__logo-img">
+                                </div>
+                            </div>
+                            <div class="restaurants__card">
+                                <img src="./img/rest-slider-2.jpg" alt="Salad" class="restaurants__card-pic">
+                                <div class="restaurants__logo">
+                                    <img src="./img/believe.jpg" alt="Believe" class="restaurants__logo-img">
+                                </div>
+                            </div>
+                            <div class="restaurants__card">
+                                <img src="./img/rest-slider-3.jpg" alt="Peppers" class="restaurants__card-pic">
+                                <div class="restaurants__logo">
+                                    <img src="./img/vietnamese.jpg" alt="Vietnamese" class="restaurants__logo-img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav">
+                            <button class="restaurants__slider-prev prev">
+                                <svg width="16" height="16">
+                                    <path d="M16 7H3.83L9.42 1.41L8 0L0 8L8 16L9.41 14.59L3.83 9H16V7Z"
+                                        fill="#9093A6" />
+                                </svg>
+                            </button>
+                            <button class="restaurants__slider-next next">
+                                <svg width="16" height="16">
+                                    <path d="M0 9L12.17 9L6.58 14.59L8 16L16 8L8 0L6.59 1.41L12.17 7L0 7L0 9Z"
+                                        fill="#9093A6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- restaurants section end-->
+
+        <!-- search section start -->
+        <section class="search">
+            <div class="search__container">
+                <div class="search__inner">
+                    <div class="search__column">
+                        <h2 class="search__title">Your nearest restaurants</h2>
+                        <p class="search__text">Each kitchen works with its own delivery area to deliver food to you as
+                            soon as possible</p>
+                    </div>
+                    <div class="search__column">
+                        <form action="#!">
+                            <input type="text" placeholder="Enter delivery address" class="search__input">
+                            <button class="search__btn">send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- search section end -->
+
+        <!-- specs section start -->
+        <section class="specs">
+            <div class="container">
+                <div class="specs__inner">
+                    <div class="specs__header">
+                        <h2 class="specs__title">Specialities</h2>
+                        <a href="#" class="grey-btn">
+                            show all
+                        </a>
+                    </div>
+                    <div class="specs__slider">
+                        <div class="specs__cards">
+                            <div class="specs__card">
+                                <div class="specs__card-wrapper">
+                                    <img src="./img/bagel.jpg" alt="Bagel" class="specs__card-pic">
+                                    <div class="specs__dish-name">
+                                        <p class="specs__dish-text">Bagel</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="specs__card ">
+                                <div class="specs__card-wrapper">
+                                    <img src="./img/burger.jpg" alt="burger" class="specs__card-pic">
+                                    <div class="specs__dish-name">
+                                        <p class="specs__dish-text">Burger</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="specs__card">
+                                <div class="specs__card-wrapper">
+                                    <img src="./img/chicken.jpg" alt="Chicken" class="specs__card-pic">
+                                    <div class="specs__dish-name">
+                                        <p class="specs__dish-text">Chicken</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="specs__card ">
+                                <div class="specs__card-wrapper">
+                                    <img src="./img/fish.jpg" alt="Fish" class="specs__card-pic">
+                                    <div class="specs__dish-name">
+                                        <p class="specs__dish-text">Fish</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="specs__card">
+                                <div class="specs__card-wrapper">
+                                    <img src="./img/fishnchips.jpg" alt="Fish’Chips" class="specs__card-pic">
+                                    <div class="specs__dish-name">
+                                        <p class="specs__dish-text">Fish’Chips</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="specs__card">
+                                <div class="specs__card-wrapper">
+                                    <img src="./img/vegan.jpg" alt="Saladsr" class="specs__card-pic">
+                                    <div class="specs__dish-name">
+                                        <p class="specs__dish-text">Salads</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="specs__card">
+                                <div class="specs__card-wrapper">
+                                    <img src="./img/pizza.jpg" alt="Pizza" class="specs__card-pic">
+                                    <div class="specs__dish-name">
+                                        <p class="specs__dish-text">Pizza</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="specs__card">
+                                <div class="specs__card-wrapper">
+                                    <img src="./img/raviolli.jpg" alt="Pasta" class="specs__card-pic">
+                                    <div class="specs__dish-name">
+                                        <p class="specs__dish-text">Pasta</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nav">
+                            <button class="specs__slider-prev prev">
+                                <svg width="16" height="16">
+                                    <path d="M16 7H3.83L9.42 1.41L8 0L0 8L8 16L9.41 14.59L3.83 9H16V7Z"
+                                        fill="#9093A6" />
+                                </svg>
+                            </button>
+                            <button class="specs__slider-next next">
+                                <svg width="16" height="16">
+                                    <path d="M0 9L12.17 9L6.58 14.59L8 16L16 8L8 0L6.59 1.41L12.17 7L0 7L0 9Z"
+                                        fill="#9093A6" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- specs section end -->
+
+        <!-- numbers section start -->
+        <div class="numbers">
+            <div class="numbers__container">
+                <div class="numbers__items">
+                    <div class="numbers__item">
+                        <div class="numbers__wrapper">
+                            <div class="numbers__circle">
+                                <span class="numbers__num">
+                                    1
+                                </span>
+                            </div>
+                        </div>
+                        <div class="numbers__text">
+                            <p>kitchen</p> 
+                        </div>
+                    </div>
+                    <div class="numbers__item">
+                        <div class="numbers__wrapper">
+                            <div class="numbers__circle">
+                                <span class="numbers__num">
+                                    11
+                                </span>
+                            </div>
+                        </div>
+                        <div class="numbers__text">
+                            <p>specialties</p>
+                        </div>
+                    </div>
+                    <div class="numbers__item">
+                        <div class="numbers__wrapper">
+                            <div class="numbers__circle">
+                                <span class="numbers__num">
+                                    11
+                                </span>
+                            </div>
+                        </div>
+                        <div class="numbers__text">
+                            <p>restaurants</p>
+                        </div>
+                    </div>
+                    <div class="numbers__item">
+                        <div class="numbers__wrapper">
+                            <div class="numbers__circle">
+                                <span class="numbers__num">
+                                    1
+                                </span>
+                            </div>
+                        </div>
+                        <div class="numbers__text">
+                            <p>transport costs</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- numbers section end -->
+
+        <!-- map section start -->
+        <div class="map">
+           <div class="container">
+                <div class="map__inner" id="map">
+                </div>
+           </div>
+        </div>
+
+        <div class="instagram">
+            <div class="container">
+                <div class="instagram__inner">
+                    <h2 class="instagram__header">
+                        <a href="#!">#YellowKitchens</a> <span class="text_grey">in instagram</span>
+                    </h2>
+                    <div class="instagram__photos">
+                        <div class="instagram__photo">
+                            <a href="#!">
+                                <img src="./img/inst-1.jpg" alt="" class="instagram__img">
+                            </a>
+                        </div>
+                        <div class="instagram__photo">
+                            <a href="#!">
+                                <img src="./img/inst-2.jpg" alt="" class="instagram__img">
+                            </a>
+                        </div>
+                        <div class="instagram__photo">
+                            <a href="#!">
+                                <img src="./img/inst-3.jpg" alt="" class="instagram__img">
+                            </a>
+                        </div>
+                        <div class="instagram__photo">
+                            <a href="#!">
+                                <img src="./img/inst-4.jpg" alt="" class="instagram__img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__row-top">
+                    <div class="footer__logo-block">
+                        <div class="footer__logo">
+                            <a href="/">
+                                <img src="./img/footer-logo.png" alt="" class="footer__logo-img">
+                            </a>
+                        </div>
+                        <hr>
+                        <div class="footer__apps">
+                            <a href="#!" class="footer__apps-link">
+                                <img src="./img/app-img1-1.svg" alt="" class="footer__apps-img">
+                            </a>
+                            <a href="#!" class="footer__apps-link">
+                                <img src="./img/app-img2-1.svg" alt="" class="footer__apps-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__lists">
+                        <div class="footer__list">
+                            <h3>About us</h3>
+                            <ul>
+                                <li><a href="#!" class="footer__list-link">Concept</a></li>
+                                <li><a href="#!" class="footer__list-link">Franchise</a></li>
+                                <li><a href="#!" class="footer__list-link">Business</a></li>
+                                <li><a href="#!" class="footer__list-link">Restaurant signup</a></li>
+                                <li><a href="#!" class="footer__list-link">For Investors</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <h3>Get help</h3>
+                            <ul>
+                                <li><a href="#!" class="footer__list-link">Read FAQs</a></li>
+                                <li><a href="#!" class="footer__list-link">Restaurants</a></li>
+                                <li><a href="#!" class="footer__list-link">Specialities</a></li>
+                                <li><a href="#!" class="footer__list-link">Sign up to deliver</a></li>
+                                <li><a href="#!" class="footer__list-link">Change language</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__list">
+                            <h3>Contact us</h3>
+                            <ul>
+                                <li><span class="thick-text">Yellow kitchen Paris 11</span></li>
+                                <li><span class="thick-text">69 avenue de la Republique 75011 Paris</span></li>
+                                <li><a href="tel:0800 111 126" class="footer__list-link">0800 111 126</a></li>
+                                <li><a href="mailto:contact@yellowkitchens.com" class="footer__list-link">contact@yellowkitchens.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__row-bottom">
+                    <div class="footer__social">
+                        <a href="#!" class="footer__soc-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 3.7069C14.8919 3.7069 15.2313 3.71943 16.3743 3.76956C17.4313 3.81551 18.0028 3.98679 18.3853 4.133C18.8923 4.32517 19.2532 4.55075 19.6313 4.91838C20.0095 5.286 20.2458 5.63691 20.4392 6.12986C20.5853 6.50165 20.7657 7.05726 20.813 8.08493C20.8646 9.19615 20.8774 9.52618 20.8774 12.3376C20.8774 15.1491 20.8646 15.4791 20.813 16.5904C20.7657 17.618 20.5896 18.1736 20.4392 18.5454C20.2415 19.0384 20.0095 19.3893 19.6313 19.7569C19.2532 20.1245 18.8923 20.3543 18.3853 20.5423C18.0028 20.6843 17.4313 20.8598 16.3743 20.9057C15.2313 20.9559 14.8919 20.9684 12.0001 20.9684C9.1083 20.9684 8.76885 20.9559 7.62588 20.9057C6.56885 20.8598 5.99736 20.6885 5.61494 20.5423C5.10791 20.3501 4.74697 20.1245 4.36885 19.7569C3.99072 19.3893 3.75439 19.0384 3.56104 18.5454C3.41494 18.1736 3.23447 17.618 3.18721 16.5904C3.13564 15.4791 3.12275 15.1491 3.12275 12.3376C3.12275 9.52618 3.13564 9.19615 3.18721 8.08493C3.23447 7.05726 3.41064 6.50165 3.56104 6.12986C3.75869 5.63691 3.99072 5.286 4.36885 4.91838C4.74697 4.55075 5.10791 4.32099 5.61494 4.133C5.99736 3.99097 6.56885 3.81551 7.62588 3.76956C8.76885 3.71525 9.1083 3.7069 12.0001 3.7069ZM12.0001 1.8103C9.06103 1.8103 8.6915 1.82284 7.53564 1.87297C6.38408 1.9231 5.59775 2.10273 4.91025 2.36173C4.19697 2.6291 3.59541 2.99254 2.99385 3.57739C2.39229 4.16225 2.02275 4.75128 1.74346 5.44057C1.47705 6.10897 1.29229 6.87345 1.24072 7.99721C1.18916 9.11678 1.17627 9.47605 1.17627 12.3335C1.17627 15.1909 1.18916 15.5502 1.24072 16.6739C1.29229 17.7935 1.47705 18.558 1.74346 19.2306C2.01846 19.924 2.39229 20.5089 2.99385 21.0937C3.59541 21.6786 4.20127 22.0378 4.91025 22.3094C5.59775 22.5684 6.38408 22.748 7.53994 22.7982C8.6958 22.8483 9.06104 22.8608 12.0044 22.8608C14.9478 22.8608 15.313 22.8483 16.4688 22.7982C17.6204 22.748 18.4067 22.5684 19.0985 22.3094C19.8118 22.042 20.4134 21.6786 21.0149 21.0937C21.6165 20.5089 21.986 19.9198 22.2653 19.2306C22.5317 18.5621 22.7165 17.7977 22.7681 16.6739C22.8196 15.5502 22.8325 15.1951 22.8325 12.3335C22.8325 9.47187 22.8196 9.11678 22.7681 7.99303C22.7165 6.87345 22.5317 6.10897 22.2653 5.43639C21.9903 4.74292 21.6165 4.15807 21.0149 3.57322C20.4134 2.98836 19.8075 2.6291 19.0985 2.35756C18.411 2.09855 17.6247 1.91892 16.4688 1.86879C15.3087 1.82284 14.9392 1.8103 12.0001 1.8103ZM12.0001 6.92776C8.93213 6.92776 6.43994 9.34654 6.43994 12.3335C6.43994 15.3204 8.93213 17.7392 12.0001 17.7392C15.0681 17.7392 17.5603 15.3162 17.5603 12.3335C17.5603 9.35072 15.0681 6.92776 12.0001 6.92776ZM12.0001 15.8426C10.0063 15.8426 8.39072 14.2718 8.39072 12.3335C8.39072 10.3951 10.0063 8.82435 12.0001 8.82435C13.9938 8.82435 15.6095 10.3951 15.6095 12.3335C15.6095 14.2718 13.9938 15.8426 12.0001 15.8426ZM19.0768 6.71472C19.0768 7.41149 18.4958 7.97633 17.7791 7.97633C17.0624 7.97633 16.4814 7.41149 16.4814 6.71472C16.4814 6.01795 17.0624 5.45311 17.7791 5.45311C18.4958 5.45311 19.0768 6.01795 19.0768 6.71472Z"/>
+                            </svg>
+                        </a>
+                        <a href="#!" class="footer__soc-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 5.65402C21.2639 6.00538 20.4741 6.24367 19.6442 6.35005C20.4915 5.80346 21.1402 4.93648 21.4476 3.90659C20.6527 4.41277 19.7754 4.78032 18.8406 4.97957C18.092 4.11932 17.0271 3.5835 15.8461 3.5835C13.5803 3.5835 11.7431 5.56249 11.7431 8.00191C11.7431 8.34788 11.7794 8.6858 11.8494 9.00892C8.44001 8.82446 5.41684 7.06492 3.39347 4.39123C3.03977 5.04283 2.83856 5.80208 2.83856 6.61256C2.83856 8.14596 3.56343 9.49895 4.66324 10.2905C3.99085 10.2663 3.35847 10.0671 2.80484 9.73586V9.79106C2.80484 11.9316 4.21958 13.7181 6.09546 14.1247C5.75177 14.2243 5.38935 14.2795 5.01442 14.2795C4.74948 14.2795 4.49327 14.2512 4.24206 14.1974C4.76445 15.9542 6.27919 17.2318 8.07387 17.2668C6.67037 18.4516 4.90069 19.1556 2.97856 19.1556C2.64739 19.1556 2.32118 19.1341 2 19.0951C3.81592 20.3511 5.97177 21.0835 8.28883 21.0835C15.8362 21.0835 19.9617 14.3495 19.9617 8.50946L19.9479 7.93731C20.754 7.31799 21.4513 6.53987 22 5.65402Z"/>
+                            </svg>    
+                        </a>
+                        <a href="#!" class="footer__soc-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23 12.3334C23 6.43222 18.0697 1.63892 12 1.63892C5.93026 1.63892 1 6.43222 1 12.3334C1 17.6751 5.0277 22.0955 10.2851 22.8962V15.4156H7.4759V12.3224H10.2851V9.96413C10.2851 7.28778 11.921 5.79604 14.4256 5.79604C15.6328 5.79604 16.8738 6.02638 16.8738 6.02638V8.63692H15.4974C14.1323 8.63692 13.6923 9.47054 13.6923 10.3151V12.3224H16.7497L16.2646 15.4156H13.7036V22.8962C18.9723 22.0955 23 17.6751 23 12.3334Z"/>
+                            </svg>    
+                        </a>
+                    </div>
+                    <div class="footer__credentials">
+                        <a  href="#!" class="footer__credentials-link">
+                            Privacy Policy
+                        </a>
+                        <a  href="#!" class="footer__credentials-link">
+                            Terms
+                        </a>
+                        <span class="footer__copy">
+                            © 2020 Yellow kitchen
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <script src="./js/main.js"></script>
+    <script                                            
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0gmy8MFaNurhR-xDorK-mhAo9AuyFXyk&callback=initMap&v=weekly"
+    defer></script>
+    
+</body>
+
+</html>
