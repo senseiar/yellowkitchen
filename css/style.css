@@ -62,11 +62,9 @@ ul {
 
 
 .slick-list {
-    width: calc(100%-30px);
-    height: calc(100%-30px);
     padding: 15px;
     margin: -15px;
-    
+    height: calc(100% - 30px);
 }
 
 .grey-btn {
@@ -91,7 +89,6 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -116,18 +113,19 @@ ul {
     right: -24px;
 }
 
-
 /* Header styles start */
-.header {
+header.sticky {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: -72px;
+    transform: translateY(72px);
+}
+
+.header {
     width: 100%;
     background-color: #fff;
-    
     border-bottom: 1px solid #9093A6;
     z-index: 99;
-    /* box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.5); */
+    transition: .2s linear;
 }
 
 .header__inner {
@@ -136,6 +134,10 @@ ul {
     align-items: center;
     justify-content: space-between;
     min-height: 72px;
+}
+
+.header__logo-mob {
+    display: none;
 }
 
 .header__items {
@@ -354,7 +356,7 @@ ul {
 /* Home styles start */
 .home {
     position: relative;
-    padding-top: 72px;
+    /* padding-top: 72px; */
     margin-bottom: 105px;
 }
 
@@ -373,8 +375,8 @@ ul {
 
 .home__title {
     max-width: 534px;
-    font-weight: 300;
-    font-size: 58px;
+    font-weight: 400;
+    font-size: 52px;
     line-height: 64px;
     margin-bottom: 88px;
 }
@@ -409,27 +411,21 @@ ul {
     font-weight: 400;
 }
 
-/* .home__column-photo {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    max-width: 100%;
-} */
-
 .home__image {
     /* position: absolute;
     top: 0;
     right: 0;
     z-index: -1; */
     max-width: 100%;
-    margin-bottom: 100px;
+    height: 706px;
+    margin-bottom: 60px;
 }
 
 .home__benefits {
+    display: flex;
+    justify-content: flex-end;
     position: absolute;
-    width: 58%;
-    right: 42%;
+    width: 60%;
     bottom: 0;
     background-color: #fff;
     box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
@@ -437,11 +433,7 @@ ul {
 
 .benefits__container {
     max-width: 772px;
-    padding: 24px 14px;
-    float: right;
-}
-
-.benefits__inner {
+    padding: 24px 25px 24px 0;
     display: flex;
     align-items: center;
 }
@@ -505,7 +497,7 @@ ul {
 }
 
 .restaurants__card-pic {
-    max-width: 296px;
+    max-width: 100%;
     border-radius: 4px 4px 0 0;
 }
 
@@ -517,7 +509,6 @@ ul {
     max-width: 296px;
     border-radius: 0 0 4px 4px;
 }
-
 
 /* restaurants styles end */
 
@@ -787,19 +778,21 @@ ul {
 
 .instagram__photo {
     overflow: hidden;
-    height: 299px;
+    /* height: 299px; */
     border-radius: 6px;
+    margin-right: 12px;
     transition: .3s linear;
 }
 
 .instagram__img {
-    width: 100%;
+    display: block;
+    max-width: 100%;
     object-fit: cover;
     transition: .2s linear;
 }
 
-.instagram__photo + .instagram__photo {
-    margin-left: 12px;
+.instagram__photo:last-child {
+    margin-right: 0;
 }
 
 .instagram__photo:hover {
@@ -817,6 +810,11 @@ ul {
         width: 100%;
         background-color: #3F4255;
     }
+
+    /* .footer__inner {
+        display: flex;
+        flex-direction: column;
+    } */
 
     .footer__row-top {
         display: flex;
@@ -933,52 +931,542 @@ ul {
 
 /******************* RESPONSIVE STYLES ************************/
 
-@media (max-width: 1199px) {
-    /* .home {
-       
-    }
+@media (max-width: 1324px) {
 
     .home__image {
-        max-width: 70%;
-        padding-bottom: 30%;
-    }
-
-    .home__title {
-        max-width: 500px;
-        font-size: 54px;
-        line-height: 58px;
-        margin-bottom: 76px;
-    }
-
-    .benefit__text {
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 18px;
-    } 
-
-    .benefit {
-        display: block;
-    }
-
-    .benefits__container {
-        padding: 14px 14px;
+        height: 646px;
     }
 
     .benefit-1 {
-        margin-right: 24px;
+        margin-right: 14px;
     }
 
     .benefit-2 {
-        margin-right: 24px;
-    }
-
-    .benefit__ico {
-        margin-right: 10px;
-        text-align: center;
+        margin-right: 14px;
     }
 
     .benefit__ico-img {
-        max-width: 44px;
-    } */
+        width: 44px;
+    }
+    
+    .restaurants__slider {
+        max-width: 930px;
+        margin: 0 auto;
+    }
+
+    .restaurants__slider-next {
+        right: -30px;
+    }
+
+    .specs__slider {
+        max-width: 1090px;
+        margin: 0 auto;
+    }
 
 }
+
+@media (max-width: 1199px) {
+    
+    .home__image {
+        height: 606px;
+    }
+
+    .benefits__container {
+        padding: 18px 15px 18px 0;
+    }
+
+    .benefit-1 {
+        margin-right: 0px;
+    }
+
+    .benefit-2 {
+        margin-right: 0px;
+    }
+
+    .benefit__text {
+        font-size: 14px;
+    }
+
+    .benefit__ico {
+        margin-right: 8px;
+    }
+
+    .benefit__ico-img {
+        width: 40px;
+    }
+
+    .specs__slider {
+        max-width: 930px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1024px){
+    .home__image {
+        height: 506px;
+    }
+}
+
+@media (max-width: 991px){
+    .home {
+        margin-bottom: 55px;
+    }
+
+    .home__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .home__column {
+        padding-top: 32px;
+    }
+    
+    .home__title {
+        max-width: 100%;
+        font-size: 48px;
+        line-height: 42px;
+        margin-bottom: 38px;
+    }
+    
+    .home__btns {
+        display: flex;
+        justify-content: center;
+    }
+
+    .home__btn {
+        padding: 16px 18px;
+    }
+
+    .home__btn + .home__btn {
+        margin-left: 18px;
+    }
+
+    .home__image {
+        height: 482px;
+        margin-bottom: 93px;
+    }
+
+    .home__benefits {
+        width: 100%;
+    }
+
+    .restaurants__slider {
+        max-width: 615px;
+    }
+
+    .search__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .search__column:first-child {
+        margin-bottom: 24px;
+    }
+
+    .specs__slider {
+        max-width: 615px;
+    }
+
+    .numbers__item {
+        margin-right: 0;
+    }
+
+    .numbers__text p{
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .instagram__photos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .instagram__photo {
+        margin-right: 0;
+    }
+
+    .footer__row-top {
+        flex-wrap: wrap;
+    }
+
+    .footer__logo-block {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+    .footer__logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__apps {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__logo-block hr{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .home__image {
+        height: 415px;
+        margin-bottom: 93px;
+    }
+
+    .home__title {
+        font-size: 44px;
+    }
+
+    .benefit-2 {
+        padding: 0;
+    }
+
+    .benefit__ico-img {
+        width: 38px;
+    }
+
+    .benefits__container {
+        padding: 18px 0px 18px 0;
+    }
+
+    .restaurants {
+        margin-bottom: 55px;
+    }
+
+    .restaurants__slider {
+        max-width: 500px;
+    }
+
+    .restaurants__card-pic {
+        max-width: 242px;
+    }
+
+    .restaurants__logo-img {
+        max-width: 242px;
+    }
+
+    .search {
+        margin-bottom: 55px;
+    }
+
+    .specs {
+        margin-bottom: 55px;
+    }
+
+    .specs__slider {
+        max-width: 500px;
+    }
+
+    .specs__card {
+        margin-right: 26px;
+        width: 106px;
+        height: 106px;
+    }
+    
+    .specs__card-pic {
+        max-width: 42px;
+    }
+
+    .numbers {
+        margin-bottom: 55px;
+    }
+
+    .numbers__wrapper {
+        width: 136px;
+    }
+
+    .numbers__num {
+        font-size: 52px;
+    }
+
+    .numbers__circle {
+        width: 106px;
+        height: 106px;
+    }
+
+    .numbers__circle::after {
+        width: 106px;
+        height: 106px;
+    }
+
+    .numbers__text p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .map {
+        margin-bottom: 55px;
+    }
+
+    .instagram {
+        margin-bottom: 55px;
+    }
+
+    .instagram__img {
+        max-width: 256px;
+    }
+
+    .instagram__photos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .footer__list + .footer__list {
+        margin-left: 22px;
+    }
+
+    .footer__list h3 {
+        font-size: 18px;
+    }
+
+    .footer__list ul li {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .header__logo {
+        display: none;
+    }
+
+    .header__logo-mob {
+        display: block;
+    }
+
+    .header__logo-mob_img {
+        width: 40px;
+    }
+
+    .home__image {
+        height: 308px;
+        margin-bottom: 25px;
+    }
+
+    .home__benefits {
+        position: static;
+        justify-content: center;
+    }
+
+    .benefits__container {
+        flex-wrap: wrap;
+    }
+
+    .benefit {
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .benefit-2 {
+        padding: 0 10px;
+    }
+
+    .restaurants__header {
+        margin-bottom: 32px;
+    }
+
+    .restaurants__slider {
+       width: 95%;
+    }
+
+    .restaurants__slider-next {
+        right: 0;
+    }
+
+    .restaurants__slider-prev {
+        left: 0;
+    }
+
+    .search__inner {
+        padding: 60px 0;
+    }
+
+    .numbers__container {
+        top: unset;
+        transform: translateY(0);
+        max-width: 407px;
+    }
+
+    .specs__header {
+        margin-bottom: 32px;
+    }
+
+    .specs__slider {
+        width: 95%;
+    }
+
+    .specs__slider-next {
+        right: 0;
+    }
+
+    .specs__slider-prev {
+        left: 0;
+    }
+
+    .specs__card {
+        margin-right: 24px;
+    }
+
+    .numbers__items {
+        flex-wrap: wrap;
+    }
+
+    .numbers__circle {
+        width: 96px;
+        height: 96px;
+        box-shadow: 1px 1px 1px #3F4255;
+    }
+
+    .numbers__circle::after {
+        width: 96px;
+        height: 96px;
+    }
+
+    .numbers__num {
+        font-size: 48px;
+    }
+
+    .numbers__text p {
+        font-size: 16px;
+        line-height: 24px;
+        text-shadow: 1px 1px 1px #fff;
+    }
+
+    .instagram__header {
+        
+        font-size: 30px;
+    }
+
+    .footer__row-bottom { 
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 32px;
+        
+    }
+
+    .footer__list {  
+        margin-bottom: 24px;
+    }
+
+    .footer__social {
+        margin-bottom: 18px;
+    }
+
+    .footer__credentials-link {
+        margin-right: 32px;
+    }
+}
+
+@media (max-width: 527px) {
+    .footer__lists {
+        flex-wrap: wrap;
+    }
+
+    .footer__list {
+          
+        margin-right: 22px;
+    }
+
+    .footer__list + .footer__list {
+        margin-left: 0;
+    }
+
+    .footer__list:last-child {  
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width: 479px) {
+
+    .header__item {
+        margin-right: 22px;
+    }
+
+    .home__title {
+        font-size: 38px;
+    }
+
+    .grey-btn {
+        font-size: 14px;
+        padding: 14px 16px;
+    }
+
+    .restaurants__title {
+        font-size: 30px;
+    }
+
+    .specs__title {
+        font-size: 30px;
+    }
+
+    .search__title {
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 18px;
+    }
+
+    .search__text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .search__column {
+        width: 100%;
+    }
+
+    .search__input {
+        padding: 18px 0 18px 48px;
+        background-position: 16px 16px;
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .search__btn {
+        width: 100%;
+        padding: 16px 0;
+    }
+
+    .instagram__header {
+        font-size: 30px;
+        line-height: 42px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 374px) {
+    .home__image {
+        height: 260px;
+    }
+
+    .home__title {
+        font-size: 36px;
+    }
+
+    .restaurants__title {
+        font-size: 28px;
+    }
+
+    .search__inner {
+        padding: 40px 0;
+    }
+
+    .search__title {
+        text-align: center;
+    }
+
+    .specs__title {
+        
+        font-size: 28px;
+    }
+
+    
+}
+

@@ -11,9 +11,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <title>YellowKitchen</title>
@@ -22,12 +21,14 @@
 <body>
     <div id="body_overlay" class="overlay"></div>
     <!-- header start -->
-    <header class="header">
-
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
-                <a href="/">
-                    <img src="./img/Logo.jpg" alt="YellowKitchen" class="header__logo">
+                <a href="/" class="header__logo">
+                    <img src="./img/Logo.jpg" alt="YellowKitchen" >
+                </a>
+                <a href="/"  class="header__logo-mob">
+                    <img src="./img/mob-logo.jpg" alt="YellowKitchen" class="header__logo-mob_img">
                 </a>
         
                 <ul class="header__items">
@@ -133,26 +134,26 @@
             </div>
             <div class="home__benefits benefits">
                 <div class="benefits__container">
-                    <div class="benefits__inner">
+                    <!-- <div class="benefits__inner"> -->
                         <div class="benefit benefit-1">
-                            <p class="benefit__ico"><img src="./img/ico/time-eat.svg" alt="" class="benefit__ico-img"></p>
+                            <div class="benefit__ico"><img src="./img/ico/time-eat.svg" alt="" class="benefit__ico-img"></div>
                             <p class="benefit__text benefit-1__text_width">
                                 Delivery in all paris in less than 30 minutes
                             </p>
                         </div>
                         <div class="benefit benefit-2">
-                            <p class="benefit__ico"><img src="./img/ico/delivery.svg" alt="" class="benefit__ico-img"></p>
+                            <div class="benefit__ico"><img src="./img/ico/delivery.svg" alt="" class="benefit__ico-img"></div>
                             <p class="benefit__text benefit-2__text_width">
                                 Free delivery from 29 euros
                             </p>
                         </div>
                         <div class="benefit benefit-3">
-                            <p class="benefit__ico"><img src="./img/ico/paris.svg" alt="" class="benefit__ico-img"></p>
+                            <div class="benefit__ico"><img src="./img/ico/paris.svg" alt="" class="benefit__ico-img"></div>
                             <p class="benefit__text benefit-3__text_width">
                                 Only fresh and French products
                             </p>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>    
         </section>
@@ -170,7 +171,7 @@
                         </a>
                     </div>
                     <div class="restaurants__slider">
-                        <div class="restaurants__cards" data-glide-el="track">
+                        <div class="restaurants__cards">
                             <div class="restaurants__card">
                                 <img src="./img/rest-slider-0.jpg" alt="burger" class="restaurants__card-pic">
                                 <div class="restaurants__logo">

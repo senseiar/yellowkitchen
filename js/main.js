@@ -48,21 +48,25 @@
     });
 })();
 
+// sticky menu
+function fixedNav() {
 
-$('.specs__cards').slick({
-    slidesToShow: 1,
-    prevArrow: $('.specs__slider-prev'),
-    nextArrow: $('.specs__slider-next'),
-    variableWidth: true
-});
+    const header = document.querySelector('#header');
+    let scrollTop = window.scrollY;
+    let currentY = document.documentElement.scrollTop;
+    let lastY = 0;
 
-$('.restaurants__cards').slick({
-    slidesToShow: 1,
-    prevArrow: $('.restaurants__slider-prev'),
-    nextArrow: $('.restaurants__slider-next'),
-    variableWidth: true
-});
+    if (currentY > 72) {
+        header.classList.add('sticky');
+    }  else if (lastY < currentY) {
+        header.classList.remove('sticky');    
+    }
+}
 
+window.onscroll = function() {fixedNav()};
+
+
+//google map
 let map;
 
 function initialize() {
@@ -92,4 +96,39 @@ function initMap() {
     });
 }
 
-  
+// slick.js slider
+$(document).ready(function() {
+    $('.restaurants__cards').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $('.restaurants__slider-prev'),
+        nextArrow: $('.restaurants__slider-next'),
+        variableWidth: true,
+        responsive: [
+            {
+              breakpoint: 575,
+              settings: {
+                centerMode: true,
+              }
+            }
+        ]
+    });
+    
+    $('.specs__cards').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $('.specs__slider-prev'),
+        nextArrow: $('.specs__slider-next'),
+        variableWidth: true,
+        responsive: [
+            {
+              breakpoint: 575,
+              settings: {
+                centerMode: true,
+              }
+            }
+        ]
+    });
+    
+    $('.slick-track').css({'padding':'30px 0'});
+});
