@@ -48,27 +48,19 @@
     });
 })();
 
-
-let scrollY = document.documentElement.scrollTop
-function isScrollToTop(currentScrollY){
-    return currentScrollY < scrollY
-}
-
 // sticky menu
 function fixedNav() {
-    const header = document.querySelector('#header');
-    let currentScrollY = document.documentElement.scrollTop;
 
-    if (currentScrollY > 72) {
+    const header = document.querySelector('#header');
+    let scrollTop = window.scrollY;
+    let currentY = document.documentElement.scrollTop;
+    let lastY = 0;
+
+    if (currentY > 72) {
         header.classList.add('sticky');
-    }  else {
+    }  else if (lastY < currentY) {
         header.classList.remove('sticky');    
     }
-
-    if(isScrollToTop(currentScrollY)){
-        header.classList.remove('sticky');
-    }
-    scrollY = currentScrollY
 }
 
 window.onscroll = function() {fixedNav()};
